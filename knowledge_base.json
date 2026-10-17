@@ -1,0 +1,302 @@
+[
+  {
+    "id": "d01",
+    "text": "The Sun is the star at the center of the Solar System.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d02",
+    "text": "Mercury is the closest planet to the Sun.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d03",
+    "text": "Venus is the second planet from the Sun and the hottest planet.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d04",
+    "text": "Earth is the third planet from the Sun and the only one known to host life.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d05",
+    "text": "Mars is the fourth planet from the Sun and is known as the Red Planet.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d06",
+    "text": "Jupiter is the largest planet in the Solar System.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d07",
+    "text": "Saturn is the sixth planet from the Sun and is famous for its ring system.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d08",
+    "text": "Uranus is the seventh planet from the Sun and rotates on its side.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d09",
+    "text": "Neptune is the eighth and farthest known planet from the Sun.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d10",
+    "text": "A light-year is the distance light travels in one year, about 9.46 trillion kilometers.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d11",
+    "text": "The capital of France is Paris.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d12",
+    "text": "The capital of Japan is Tokyo.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d13",
+    "text": "The capital of Australia is Canberra.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d14",
+    "text": "The Nile is often cited as the longest river in the world.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d15",
+    "text": "The Pacific Ocean is the largest ocean on Earth.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d16",
+    "text": "Mount Everest is the tallest mountain above sea level.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d17",
+    "text": "The Sahara is the largest hot desert in the world.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d18",
+    "text": "Russia is the largest country in the world by area.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d19",
+    "text": "India is the most populous country in the world.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d20",
+    "text": "The capital of Canada is Ottawa.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d21",
+    "text": "The chemical symbol for gold is Au.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d22",
+    "text": "The chemical symbol for sodium is Na.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d23",
+    "text": "The chemical formula for water is H2O.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d24",
+    "text": "The speed of light is approximately 299792 kilometers per second.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d25",
+    "text": "Hydrogen is the lightest element.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d26",
+    "text": "Nitrogen is the most abundant gas in Earth's atmosphere.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d27",
+    "text": "A pH value of 7 is considered neutral.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d28",
+    "text": "Water freezes at 0 degrees Celsius.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d29",
+    "text": "Water boils at 100 degrees Celsius at sea level.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d30",
+    "text": "The atomic number of carbon is 6.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d31",
+    "text": "The mitochondria is known as the powerhouse of the cell.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d32",
+    "text": "The adult human body has 206 bones.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d33",
+    "text": "DNA stands for deoxyribonucleic acid.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d34",
+    "text": "The skin is the largest organ of the human body.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d35",
+    "text": "Red blood cells carry oxygen through the body.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d36",
+    "text": "Photosynthesis occurs in the chloroplast.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d37",
+    "text": "The human heart has four chambers.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d38",
+    "text": "Insulin is the hormone that regulates blood sugar.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d39",
+    "text": "The blue whale is the largest mammal on Earth.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d40",
+    "text": "Humans have 23 pairs of chromosomes.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d41",
+    "text": "CPU stands for Central Processing Unit.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d42",
+    "text": "RAM stands for Random Access Memory.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d43",
+    "text": "HTTP stands for HyperText Transfer Protocol.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d44",
+    "text": "The Python programming language was created by Guido van Rossum.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d45",
+    "text": "The binary number system uses base 2.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d46",
+    "text": "HTML stands for HyperText Markup Language.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d47",
+    "text": "A byte consists of 8 bits.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d48",
+    "text": "SQL stands for Structured Query Language.",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d49",
+    "text": "The time complexity of binary search is O(log n).",
+    "source": "seed",
+    "trust": "trusted"
+  },
+  {
+    "id": "d50",
+    "text": "Linux was created by Linus Torvalds.",
+    "source": "seed",
+    "trust": "trusted"
+  }
+]

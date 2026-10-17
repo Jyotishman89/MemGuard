@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What is at the center of the Solar System?",
+    "answer": "sun",
+    "doc_id": "d01"
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "answer": "mercury",
+    "doc_id": "d02"
+  },
+  {
+    "question": "Which is the hottest planet?",
+    "answer": "venus",
+    "doc_id": "d03"
+  },
+  {
+    "question": "Which planet is the only one known to host life?",
+    "answer": "earth",
+    "doc_id": "d04"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "answer": "mars",
+    "doc_id": "d05"
+  },
+  {
+    "question": "What is the largest planet in the Solar System?",
+    "answer": "jupiter",
+    "doc_id": "d06"
+  },
+  {
+    "question": "Which planet is famous for its ring system?",
+    "answer": "saturn",
+    "doc_id": "d07"
+  },
+  {
+    "question": "Which planet rotates on its side?",
+    "answer": "uranus",
+    "doc_id": "d08"
+  },
+  {
+    "question": "Which is the farthest known planet from the Sun?",
+    "answer": "neptune",
+    "doc_id": "d09"
+  },
+  {
+    "question": "About how far does light travel in one year?",
+    "answer": "9.46 trillion",
+    "doc_id": "d10"
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "paris",
+    "doc_id": "d11"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answer": "tokyo",
+    "doc_id": "d12"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "answer": "canberra",
+    "doc_id": "d13"
+  },
+  {
+    "question": "Which river is often cited as the longest in the world?",
+    "answer": "nile",
+    "doc_id": "d14"
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "answer": "pacific",
+    "doc_id": "d15"
+  }
+]
