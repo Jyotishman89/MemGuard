@@ -1,14 +1,3 @@
-"""The "before" scoreboard for the targeted attack (no defense).
-
-  ASR (on targeted queries) -- % of target questions whose answer carries the payload
-  Clean accuracy (all)      -- % of ALL questions still answered correctly
-  Poison rate               -- poison passages / corpus
-
-Writes results/attack_before.json.
-
-    python measure_attack.py [--show]
-"""
-
 import json
 import os
 import sys
@@ -36,7 +25,6 @@ def main():
     agent.index(poisoned_kb)
     print(f"Indexed {len(poisoned_kb)} docs ({n_poison} poison).\n")
 
-    # ASR on the targeted questions
     hijacked = 0
     for t in targets:
         ans, _ = agent.answer(t["question"])
@@ -46,7 +34,6 @@ def main():
             print(f"  ASR={'HIT' if hit else '---'}  {t['question']}")
     asr = hijacked / len(targets)
 
-    # Clean accuracy across ALL questions (targets counted as wrong if hijacked)
     eval_set = json.load(open(os.path.join(HERE, "eval_set.json")))
     correct = 0
     for e in eval_set:

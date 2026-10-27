@@ -1,16 +1,3 @@
-"""Day 6: generate the results chart for the README.
-
-Reads the JSON scoreboards in results/ and draws a grouped bar chart:
-  - Attack Success Rate (red)  -- lower is better
-  - Clean Accuracy      (blue) -- higher is better
-
-Shows a "Before MemGuard" group now. Once Weeks 2-3 write results/attack_after.json,
-an "After MemGuard" group appears automatically and the chart becomes the
-before/after money chart with no code changes.
-
-    python make_chart.py     ->  results/summary.png
-"""
-
 import json
 import os
 
@@ -37,8 +24,6 @@ def main():
     if before is None:
         raise SystemExit("Run measure_attack.py first to create results/attack_before.json")
 
-    # Always show two columns so the before/after story reads at a glance.
-    # If "after" isn't measured yet, its slot is a faint "pending" placeholder.
     w = 0.32
     fig, ax = plt.subplots(figsize=(7, 4.6), dpi=150)
     fig.patch.set_facecolor(SURFACE)
@@ -59,13 +44,11 @@ def main():
     if after is not None:
         draw_group(1, after)
     else:
-        # ghost placeholder bars for the not-yet-measured "after"
         ax.bar(1 - w / 2, 100, w, facecolor="none", edgecolor="#d6d6d6", hatch="//", linewidth=1)
         ax.bar(1 + w / 2, 100, w, facecolor="none", edgecolor="#d6d6d6", hatch="//", linewidth=1)
         ax.text(1, 50, "pending\n(Week 2-3)", ha="center", va="center",
                 fontsize=9, color=MUTED, style="italic")
 
-    # legend proxies (color = identity)
     from matplotlib.patches import Patch
     ax.legend(handles=[Patch(color=RED, label="Attack Success Rate (lower = better)"),
                        Patch(color=BLUE, label="Clean Accuracy (higher = better)")],

@@ -1,17 +1,3 @@
-"""Measure the targeted attack when the poison is SIGNED (trusted channel).
-
-Escalation: the poison passages are signed too, so provenance can't tell them from
-real content. Only the content anomaly detector (intra-doc incoherence) catches them.
-
-  A. Provenance only        -> attack still succeeds (signatures don't help)
-  B. run mem.scan()         -> detector flags the poison
-  C. Provenance + anomaly   -> attack collapses, clean accuracy kept
-
-Writes results/attack_after_anomaly.json.
-
-    python measure_defense3.py [--show]
-"""
-
 import json
 import os
 import sys

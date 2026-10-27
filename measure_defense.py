@@ -1,15 +1,3 @@
-"""Measure the targeted attack WITH provenance on (unsigned poison).
-
-  - clean docs enter via the OWNER path  -> signed
-  - poison passages enter via the ATTACKER path -> unsigned
-
-Provenance should drop the unsigned poison -> ASR collapses. Writes
-results/attack_after.json.
-
-    python measure_defense.py                 # provenance on
-    python measure_defense.py --policy off    # sanity: reproduces the undefended ASR
-"""
-
 import json
 import os
 import sys

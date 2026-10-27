@@ -6,8 +6,6 @@ import chromadb
 import llm
 from embeddings import get_embedding_function
  
-# Anchor all paths to THIS file's folder, so the scripts work no matter what
-# directory you run them from (the usual cause of FileNotFoundError).
 HERE = os.path.dirname(os.path.abspath(__file__))
 COLLECTION = "memguard_kb"
 PERSIST_DIR = os.path.join(HERE, ".chroma")
@@ -28,8 +26,6 @@ class RagAgent:
                 self._client.delete_collection(COLLECTION)
             except Exception:
                 pass
-        # None -> Chroma's built-in default (all-MiniLM-L6-v2). The hashing
-        # embedder is returned only when MEMGUARD_EMBED=hashing (offline mode).
         embed_fn = get_embedding_function()
         kwargs = {"name": COLLECTION}
         if embed_fn is not None:

@@ -1,13 +1,3 @@
-"""Week 3 chart: defense-in-depth against SIGNED poison.
-
-Three scenarios, showing why one layer isn't enough:
-  No defense           -> attack works
-  Provenance only      -> still works (poison is signed)
-  Provenance + Anomaly -> stopped
-
-    python make_chart_depth.py  ->  assets/defense_in_depth.png
-"""
-
 import json
 import os
 
@@ -29,9 +19,6 @@ def main():
         raise SystemExit("Run `python measure_defense3.py` first — it creates "
                          "results/attack_after_anomaly.json, which this chart reads.")
     depth = json.load(open(path))
-    # All bars come from MEASURED data (no hardcoding). Against SIGNED poison,
-    # "no defense" and "provenance only" are the same run, so we show the two
-    # meaningful states: provenance alone vs. provenance + the ML detector.
     prov_clean = depth.get("provenance_only_clean", depth["clean_accuracy_retention"])
     scenarios = [
         ("Provenance only\n(signed poison)", round(depth["provenance_only_asr"] * 100), round(prov_clean * 100)),

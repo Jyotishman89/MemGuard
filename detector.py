@@ -1,27 +1,3 @@
-"""MemGuard's content anomaly detector (Week 3, upgraded).
-
-Provenance stops UNSIGNED poison. This detector inspects content itself, to catch
-poison that arrives through a trusted/signed channel. It scores each document on
-three unsupervised, explainable signals and flags it if ANY of them trips — so it
-defends against more than one attack style:
-
-  1. internal_repetition   -- trigger-stuffed poison repeats tokens. 1 - unique/total.
-  2. max_neighbor_sim       -- duplicated poison clusters as near-identical copies.
-                               Cosine similarity to the most-similar OTHER document.
-  3. intra_doc_incoherence  -- a PoisonedRAG passage is a relevant sentence with a
-                               malicious sentence bolted on, so its own sentences
-                               don't cohere. 1 - min pairwise sentence similarity.
-
-Signal 3 needs to embed individual sentences, so `score()` takes an `embed` callable
-(the same embedder the store uses). Measured margins on the demo corpus:
-  repetition  clean <=0.27 vs poison >=0.95
-  neighbor    clean <=0.81 vs poison =1.00   (duplicate-style poison)
-  incoherence clean  =0.00 vs poison >=0.58   (PoisonedRAG-style poison)
-
-Method note: an off-the-shelf IsolationForest over raw embeddings was tested and
-missed the poison, so these targeted signals are used instead.
-"""
-
 import re
 
 import numpy as np
@@ -71,7 +47,6 @@ class AnomalyDetector:
         return float(1.0 - S[np.triu_indices(len(ss), 1)].min())
 
     def score(self, texts, embeddings, embed=None):
-        """One record per doc: all three signals, a 0-1 risk, and a flag."""
         sims = self._neighbor_sim(embeddings)
         out = []
         for text, sim in zip(texts, sims):
